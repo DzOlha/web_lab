@@ -1,0 +1,31 @@
+
+.left_block {
+    text-align: left;
+    align-self: start;
+    padding: 2%;
+    font-family: 'segoePrint';
+    font-size: 17px;
+    margin-left: 5%;
+}
+.left_block .list ul {
+    margin-left: 30px;
+}
+.left_block ul li {
+    list-style: none;
+    text-indent: 40px;
+}
+.left_block .list span {
+    cursor: pointer;
+}
+.left_block .list li span:hover {
+    text-decoration: 2px #68b108 underline;
+}
+.left_block .list span.show::before {
+    content: "-";
+}
+.left_block .list span.hide::before {
+    content: "+";
+}
+.left_block .list:last-child ul + li::before {
+    content: '';
+}
